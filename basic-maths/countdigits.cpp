@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int countDigits(int n)
 {
     int count = 0;
