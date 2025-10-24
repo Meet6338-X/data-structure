@@ -15,7 +15,18 @@ void factorialm(int n)
         factorialm(n);
     }
 }
+
+int factorial2f(int n) 
+{
+    if (n == 0 || n == 1)
+        return 1;
+    
+    
+    return n * factorial2f(n - 1);
+}
+
 int main()
 {
-    factorialm(5);
+    // factorialm(5);
+    cout<< factorial2f(5);
 }
