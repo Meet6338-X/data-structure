@@ -41,3 +41,7 @@ int main()
 
 //     return 0;
 // }
+
+// #include <algorithm> // Required for std::max_element also sort
+// max_element(arr.begin(), arr.end())
+// sort(arr.begin(), arr.end());
