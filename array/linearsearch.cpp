@@ -8,11 +8,7 @@ void linearsearch(int arr[], int n, int k)
         {
             cout << arr[i] << " at index " << i;
         }
-        else
-        {
-            cout << "element not found";
-            break;
-        }
+        cout << "element not found";
     }
 }
 int main()
