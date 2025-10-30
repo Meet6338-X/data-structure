@@ -43,7 +43,7 @@ int issame(char *expr)
 
 int main()
 {
-    char expr[] = "{[(a+b),(c*d)]";
+    char expr[] = "{[(a+b),(c*d)]}";
     if (issame(expr))
         printf("Same\n");
     else
