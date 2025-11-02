@@ -53,7 +53,6 @@ void display()
     printf("\n");
 }
 
-// Reverse first K elements of the queue
 void reverseFirstK(int k)
 {
     if (isEmpty() || k > (rear - front + 1) || k <= 0)
@@ -64,15 +63,12 @@ void reverseFirstK(int k)
 
     int stack[MAX], top = -1;
 
-    // Dequeue first k elements and push onto stack
     for (int i = 0; i < k; i++)
         stack[++top] = dequeue();
 
-    // Pop stack elements and enqueue back
     while (top != -1)
         enqueue(stack[top--]);
 
-    // Move remaining n-k elements to the back
     int size = rear - front + 1;
     for (int i = 0; i < size - k; i++)
     {
