@@ -65,7 +65,6 @@ int main()
             data[i][j] = (ThreadData *)malloc(sizeof(ThreadData));
             data[i][j]->row = i;
             data[i][j]->col = j;
-
             pthread_create(&threads[i][j], NULL, multiply, data[i][j]);
         }
     }
@@ -82,7 +81,7 @@ int main()
         }
     }
 
-    printf("Resultant Matrix C = A x B:\n");
+    printf("\nResultant Matrix C = A x B:\n");
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < q; j++)
