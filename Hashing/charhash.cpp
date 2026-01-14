@@ -1,3 +1,35 @@
+// copy
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string s;
+//     cout << "Enter String : ";
+//     cin >> s;
+
+//     // precompute:
+//     int hash[26] = {0};
+//     for (int i = 0; i < s.size(); i++)
+//     {
+//         hash[s[i] - 'a']++;
+//     }
+
+//     int q;
+//     cout << "number of time we have to check : ";
+//     cin >> q;
+//     while (q--)
+//     {
+//         char c;
+//         cout << "enter character to hash : ";
+//         cin >> c;
+//         // fetch:
+//         cout << hash[c - 'a'];
+//         cout << "time's " << endl;
+//     }
+//     return 0;
+// }
+
+// for captical and small  = 256
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -6,11 +38,10 @@ int main()
     cout << "Enter String : ";
     cin >> s;
 
-    // precompute:
-    int hash[26] = {0};
+    int hash[256] = {0};
     for (int i = 0; i < s.size(); i++)
     {
-        hash[s[i] - 'a']++;
+        hash[s[i]]++;
     }
 
     int q;
@@ -21,8 +52,7 @@ int main()
         char c;
         cout << "enter character to hash : ";
         cin >> c;
-        // fetch:
-        cout << hash[c - 'a'];
+        cout << hash[c];
         cout << "time's " << endl;
     }
     return 0;

@@ -1,0 +1,13 @@
+Hashing is a technique to:
+Convert data of any size (key)
+Into a fixed-size value (hash)
+Using a hash function
+So we can store and retrieve data fast
+
+// key → integer (hash value)
+
+collition solving technique
+1.Linear probing
+2.Quadratic probing
+3.Double hashing
+
