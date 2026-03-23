@@ -1,10 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int reverse(int X) 
+int reverse(int X)
 {
    int Y = 0;
-   while (X > 0) 
+   while (X > 0)
    {
       int digit = X % 10;
       Y = Y * 10 + digit;
@@ -12,16 +12,17 @@ int reverse(int X)
    }
    return Y;
 }
-int main() 
+int main()
 {
    int X = 0;
-   cin>>X;
+   cin >> X;
    int dummy = X;
    int Y = reverse(X);
-   if (dummy == Y) 
+   if (dummy == Y)
    {
       cout << "true" << endl;
-   } else 
+   }
+   else
    {
       cout << "false" << endl;
    }
