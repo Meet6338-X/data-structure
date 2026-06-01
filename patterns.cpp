@@ -412,7 +412,7 @@ int main()
 {
     int n;
     cin >> n;
-    pattern19(n);
+    pattern11(n);
 }
 
 void print1(int n)
