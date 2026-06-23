@@ -23,6 +23,51 @@ public:
     }
 };
 
+// brute force O(n) O(1)
+//  for (int i = 0; i <= n; i++)
+//  {
+//      bool found = false;
+
+//     for (int j = 0; j < n; j++)
+//     {
+//         if (nums[j] == i)
+//         {
+//             found = true;
+//             break;
+//         }
+//     }
+
+//     if (!found)
+//         return i;
+// }
+
+// hash array
+class Solution
+{
+public:
+    int missingNumber(vector<int> &nums)
+    {
+        int n = nums.size();
+
+        vector<int> hash(n + 1, 0);
+
+        for (int i = 0; i < n; i++)
+        {
+            hash[nums[i]] = 1;
+        }
+
+        for (int i = 0; i <= n; i++)
+        {
+            if (hash[i] == 0)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+};
+
 int main()
 {
     Solution sol;
